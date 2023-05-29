@@ -9,8 +9,8 @@
       </div>
       <div class="boxmox">
         <input type="text" id="name" v-model="newItemName" class="mox" />
-        <input id="todo" v-model="newItemTodo" class="" />
-        <input type="date" id="time" v-model="newItemTime" />
+        <input id="todo" v-model="newItemTodo" class="mox" />
+        <input type="date" id="time" v-model="newItemTime" class="mox" />
         <button type="button" class="btn" @click="addItem">Add Item</button>
       </div>
     </form>
