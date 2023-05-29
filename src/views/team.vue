@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="mystore">
-      <h3>Dashboard</h3>
+      <h3>Team</h3>
     </div>
     <section class="team">
       <div class="teamBox">
