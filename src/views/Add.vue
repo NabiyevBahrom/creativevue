@@ -11,7 +11,7 @@
         <input type="text" id="name" v-model="newItemName" class="mox" />
         <input id="todo" v-model="newItemTodo" class="mox" />
         <input type="date" id="time" v-model="newItemTime" class="mox" />
-        <button type="button" class="btn" @click="addItem">Add Item</button>
+        <button type="button" class="btn mox" @click="addItem">Add Item</button>
       </div>
     </form>
     <div id="demo"></div>
@@ -28,20 +28,23 @@
       <div class="boxtodotwo">
         <ol v-for="item in items" :key="item.id">
           <div class="boxroom">
-            <div class="textbox">{{ item.name }}</div>
-            <div class="textbox">{{ item.todo }}</div>
-            <div class="textbox">{{ item.time }}</div>
+            <div class="textbox mox">{{ item.name }}</div>
+            <div class="textbox mox">{{ item.todo }}</div>
+            <div class="textbox mox">{{ item.time }}</div>
             <div style="display: flex; justify-content: space-between">
               <button
+                class="mox"
                 style="margin-right: 30px"
                 type="button"
                 @click="editItem(item)"
               >
                 <i
-                  class="fa-solid fa-repeat fa-spin"
+                  class="fa-solid fa-repeat fa-spin mox"
                   style="color: #045ffb"
                 ></i></button
-              ><button type="button" @click="deleteItem(item)">Delete</button>
+              ><button type="button" class="mox" @click="deleteItem(item)">
+                Delete
+              </button>
             </div>
           </div>
         </ol>
